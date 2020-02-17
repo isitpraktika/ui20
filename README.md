@@ -12,11 +12,24 @@
 
 Возможности приложения:
  1. Авторизация пользователя на основе Firebase Authorization по email и одной из соц.сетей** (Facebook/Google). Выход из аккаунта. Удаление аккаунта. Сохранение сессии.
+    - REST Api: https://firebase.google.com/docs/reference/rest/auth
+    - Javascript: https://firebase.google.com/docs/auth/web/start 
  2. Проверка пользовательского токена с использованием JWT.
+    - https://firebase.google.com/docs/auth/admin/verify-id-tokens
  3. Создание/редактирование/удаление документов (Заголовок, Дата, Текст, Ссылка на файл) на основе базы данных Firebase Realtime Database
+    - REST Api: https://firebase.google.com/docs/reference/rest/database
+    - Javascript: https://firebase.google.com/docs/database/web/start
  4. Загрузка файлов (изображение) в хранилище Firebase Storage. Ссылка на загруженный файл сохраняется в поле базы данных "Ссылка на файл"
+    - Javascript: https://firebase.google.com/docs/storage/web/upload-files
  5. Преобразование загруженного изображения в черно-белое (в дальнейшем распознавание текста). Изображение загружается с Firebase Storage на собственный сервер, изображение преобразуется и отправляется на Firebase Storage с перезаписью файла.
- 6. После преобразования изображения пользователю отправляется пуш уведомление**. 
+ 6. После преобразования изображения пользователю отправляется пуш уведомление**.
+    - REST Api: https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages/send
+    - Javascript: https://firebase.google.com/docs/cloud-messaging/js/first-message
+ 
+#### Требования к разработке приложения
+- Для клиентской части использовать только официально поддерживаемые технологии Firebase, т.е. Javascript или REST Api
+- Для серверной части использовать PHP или Javascript (Node.js)
+- Код приложения должен быть минимально необходимым на основе документации, без использования комплексных фреймворков, напр. Angular, Lavarel, jQuery и т.д.
 
 ### Домашние задания
 - Авторизация пользователя по email
